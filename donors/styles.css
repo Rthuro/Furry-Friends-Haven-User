@@ -18,9 +18,9 @@ align-items: center;
 justify-content: center;
 }
 .nav-img {
-width: 20vh;
-height: 20vh;
-object-fit: contain;
+width: 15vh;
+height: 15vh;
+object-fit: cover;
 position: absolute;
 }
 
