@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    box-sizing: border-box ;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2e4d6;
+}
+
+.container{
+    background: white;
+    max-width: 900px;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 15px 15px;
+    width: 100%;
+    box-shadow: 0 5px 10px black;
+}
+
+.container header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    font-weight: 900;
+    color: #a35f1b;
+    margin-bottom: 50px;
+}
+
+.container img{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+
+}
+
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: white;
+}
+
+
+.container form .details{
+  
+    margin-top: 30px;
+}
+
+.container form .details .address{
+    margin-top: 10px;
+}
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: black;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);;
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(30, 29, 29);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+#desire{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(47, 46, 46);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+#additional_info{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(14, 13, 13);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 5px 15px;
+    height: 70px;
+    width: 840px;
+    margin: 8px 0;
+}
+
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 2px rgb(160, 141, 141);
+}
+
+.input-field input[type="date"]{
+    color: #181818;
+}
+
+.input-field input[type="date"]:valid{
+    box-shadow: 0 3px 6px black;
+}
+
+.container form button, .next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100% ;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #c2701e;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.container .next:hover{
+    color: #181818;
+}
+h6{
+    text-align: center;
+}
+
+
+
+
+form button:hover{
+    background-color: #cf7922;
+}
+
+
+@media (max-width: 600px) {
+    .personal-details h3{
+        text-align: center;
+    }
+    .personal-details .fields {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personal-details .fields .input-field {
+        margin: 10px 0;
+        width: 100%;
+    }
+}

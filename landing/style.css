@@ -1,0 +1,634 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../icon/Poppins-Regular.ttf") format("ttf");
+    }
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(227, 221, 212, 0.2),rgba(227, 221, 212, 0.7)),url("images/browndoggie.jpg");
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 20vh;
+    margin-left: 20%;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+    margin-top: 2%;
+    margin-right: 4%;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    margin-top: 3px;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #DB9C60;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    font-weight: 800;
+    font-style: normal;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 7vh;
+}
+.text-box p{
+    font-weight: 100;
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #553c2b;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 12px 34px;
+    font-size: 16px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+
+.hero-btn:hover{
+    border: 3px solid #a35b13;
+    background: #a35b13;
+    transition: 1s;
+
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 25px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #DB6D00;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+
+/*-----about----*/
+
+.about{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.about .about2 h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    color: #a35b13;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.about .about2 p{
+    color: black ;
+    font-size: 18px;
+    font-weight: 300px;
+    line-height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.ourshelter{
+    width: 1400px;
+    min-height: 100vh;
+    background-color:none;
+    margin-left: -100px;
+
+}
+
+.shelter-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: right;
+    width: 40%;
+}
+
+.shelter-image{
+    float: left;
+    width: 55%;
+}
+
+.shelter-image img{
+    width: 100%;
+    height: auto;
+    height:380px;
+    object-fit: contain;
+}
+
+
+.shelter-container .shelter-title{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #a35b13;
+    font-family: "Moul", serif;
+}
+
+.content-section .shelter-content h3{
+    color: black;
+}
+
+.content-section .shelter-content p{
+    margin-top: 10px;
+    font-size: 17px;
+
+}
+
+.shelter-button{
+    margin-top: 30px;
+}
+.shelter-button a{
+    background-color: #c4690e;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border-radius: 2vh;
+}
+
+
+.shelter-button a:hover{
+    background-color: #e57404;
+    color: antiquewhite;
+}
+
+.shelter-socials{
+    margin:30px 40px 0 -18px;
+}
+
+.shelter-socials i{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 2px;
+    padding: 0 10px;
+
+}
+
+.shelter-socials a{
+    color: black;
+    font-size: 15px;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 1.5px;
+}
+
+.shelter-socials a:hover{
+    color: #e57404;
+
+}
+
+.shelter-socials i:hover{
+    color: #e57404;
+
+}
+
+
+.row{
+
+    margin-top: -140px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.row h3{
+    font-size: 42px;
+    color:#a35b13;
+    font-weight: 600;
+}
+
+.row h1{
+    font-size: 16px;
+    color: rgb(18, 17, 17);
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.row p{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(16, 15, 15);
+    margin-bottom: 20px;
+}
+
+.about-col{
+    flex-basis: 31%;
+    background-color: #d2ceca;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+
+}
+
+.about-col:hover{
+    box-shadow: 0 0 20px 0px #b6b2af;
+}
+
+.wrapper body{
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.wrapper{
+    margin: 150px auto;
+    width: 70%;
+
+}
+
+
+.wrapper img{
+    max-width: 550px;
+    float: left;
+    border: 3px solid wheat;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+
+    .shelter-container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+        
+    }
+    
+    
+
+    
+
+
+}
+
+
+/*----donors---*/
+
+.donors{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+.donors h1{
+    font-size: 38px;
+    font-weight: 600;
+    color: #a35b13;
+    margin-bottom: 20px;
+    flex-wrap: wrap-reverse;
+}
+
+.donors h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: #a35b13;
+
+}
+
+.donors p{
+    color: black ;
+    font-size: 18px;
+    font-weight: 300px;
+    line-height: 30px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+
+.payment-logo {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 0 auto; 
+    width: 80%;
+}
+
+.donate-button{
+    margin-top: 30px
+}
+
+
+
+.donate-button a{
+    background-color: #c4690e;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 2vh;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+  
+.donate-button a:hover{
+    background-color: #e57404;
+    color: antiquewhite;
+}
+.payment-logo img {
+    width: 23%;
+    margin: 10px;
+}
+
+
+/*---Adoption--*/
+
+.adoption{
+    padding: 10px;
+    margin-top: 50px;
+}
+.info-section {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 50px;
+    
+}
+  
+.info-section h1{
+    font-size: 50px;
+    color: #e57404;
+    margin-bottom: 20px;
+}
+
+.info-section p{
+    font-size: 18px;
+    color: rgb(224, 217, 217);
+    margin-bottom: 30px;
+}
+.info-content {
+    max-width: 500px;
+}
+
+.info-content h3{
+    font-size: 30px;
+    color: #e57404;
+    margin-bottom: 20px;
+}
+
+.info-content li{
+    font-size: 18px;
+    color: #eae8e6;
+    margin-bottom: 10px;
+}
+
+  
+.info-section a {
+    margin-top: 20px; 
+    background-color: #e57404;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 50px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.info-section a:hover{
+    background-color: #b05c09;
+    color: white;
+}
+  
+  
+@media screen and (max-width: 768px) {
+    .info-section {
+      align-items: center;
+    }
+}
+
+
+
+
+
+
+.layer h3{
+    font-size: 1.5em;
+    color: #fff;
+    width: 100%;
+    font-weight: 600;
+    bottom: 0;
+    left: 50%;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.layer p{
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 200;
+    margin-top: 10px;
+    color: white;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*--Adopt--*/
+
+.adoption {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0, 0.7)), url("images/CAT-GUY.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+  
+  
+  
+/* Media query for smaller devices */
+@media screen and (max-width: 760px) {
+    .adoption {
+      background-position: calc(100% - -50px); /* Adjust right position for smaller screens */
+    }
+}
+
+.last-sec{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.last-sec h2{
+    font-size: 40px;
+    color: #b05c09;
+    text-align: center;
+}
+  
+.footer{
+    background-color: #ead2ba;
+    width: 100%;
+    height: 23vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+}
+.footer img{
+    height: 15vh;
+    width: 15vh;
+    object-fit: cover;
+    margin-top: 2vh;
+    margin-bottom: -3vh;
+}
+.footer .content{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .content .contact {
+    width: 15vh;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .content .contact img{
+    width: 4vh;
+    height: 4vh;
+}
+.footer .web-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 20vh;
+    margin-left: 2vh;
+}
+.footer .web-links a {
+    color: #924e0a;
+    text-decoration: none;
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+.web-links a:hover{
+    color: #924e0a;
+    font-weight: 900;
+}

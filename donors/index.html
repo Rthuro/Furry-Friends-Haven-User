@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Friends' Haven</title>
+    <link rel="icon" href="../icon/2.png" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="../index.html"> <img src="images/2.png" class="nav-img" alt=""></a>
+    </div>
+    <div class="container1">
+        <div class="overlay-container">
+          <h>Help A Furry Friend!</h>
+          <button id="open-popup-button" class="d-btn" onclick="document.getElementById('popup').style.display='flex';">Donate Now</button>
+        </div>
+        <img class="c1-bg" src="../landing/images/13.png" alt="Furry friend image">
+        <div id="popup" class="popup">
+            <a onclick="document.getElementById('popup').style.display='none';"><img class="close-popup"  src="../icon/close-circle-svgrepo-com.svg"></a>
+            <div class="picture-card">
+                <img src="../images/DONATION/owner-brushing-cute-cat-front-view.jpg" alt="Picture">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dignissimos inventore sunt placeat, recusandae aliquid perspiciatis architecto nemo. Temporibus ex dolores dignissimos! Eos, maiores placeat laboriosam modi aliquam corporis asperiores!</p>
+            </div>
+            <div class="form-card">
+                <h>Donate Now</h>
+                <div class="radio">
+                    <input type="radio" id="option1" name="donate" value="option1">
+                    <label for="option1">One Time</label>
+                    <input type="radio" id="option2" name="donate" value="option2">
+                    <label for="option2">Monthly</label>
+                </div>  
+                <input type="text" name="amount-txt" placeholder="Specify an amount">
+                <div class="dropdown">
+                    <h id="paym">Payment Method:</h>
+                        <select id="s1">
+                            <option value="gcash">GCASH</option>
+                            <option value="paypal">PAYPAL</option>
+                            <option value="card">CARD</option>
+                        </select>
+                </div>
+                <div class="name">
+                    <div class="radio">
+                        <input type="radio" name="addLive" value="anon">
+                        <label for="anon">Keep my donation anonymous.</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="addLive" value="name" id="showAddLiveOthers">
+                        <label for="anon">Honor donation to:</label>
+                    </div>
+                    <div id="addLiveOthersDiv">
+                        <input type="text" name="addLiveOthers" id="addLiveOthers" placeholder="Name">
+                    </div>
+                </div>
+                <button class="d-btn" href="#">Donate Now</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="one">
+            <h>Donate Now</h>
+                <div class="radio">
+                    <input type="radio" id="option1" name="donate" value="option1">
+                    <label for="option1">One Time</label>
+                    <input type="radio" id="option2" name="donate" value="option2">
+                    <label for="option2">Monthly</label>
+                </div>  
+                <input type="text" name="amount-txt" placeholder="Specify an amount">
+                <div class="dropdown">
+                    <h id="paym">Payment Method:</h>
+                        <select id="s1">
+                            <option value="gcash">GCASH</option>
+                            <option value="paypal">PAYPAL</option>
+                            <option value="card">CARD</option>
+                        </select>
+                </div>
+                <div class="name">
+                    <div class="radio">
+                        <input type="radio" name="c2addLive" value="anon">
+                        <label for="anon">Keep my donation anonymous.</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="c2addLive" value="name" id="c2showAddLiveOthers">
+                        <label for="anon">Honor donation to:</label>
+                    </div>
+                    <div id="c2addLiveOthersDiv">
+                        <input type="text" name="addLiveOthers" id="addLiveOthers" placeholder="Name">
+                    </div>
+                </div>
+            <a class="d-btn" href="#">Donate Now</a>
+        </div>
+        <div class="two">
+            <div class="text">
+                <h>Furry Friends need your help!</h>
+                <p class="p1" >By donating to our website:</p>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <p class="p2">Your support provides them with food, shelter, medical care, and most importantly, the chance to find a loving forever home. Every dollar counts, so please visit our website today and donate. Together, we can create a world where every animal feels loved and secure.</p>
+                <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum ab perferendis, unde eum maxime. Autem, repudiandae perferendis. Doloremque esse minima ut? Aliquid commodi reprehenderit non. In deserunt soluta est.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="content">
+        <img src="../icon/2.png">
+            <div class="contact">
+            <a href="#"><img src="../icon/facebook-svgrepo-com.svg"></a> 
+            <a href="#"><img src="../icon/instagram-round-svgrepo-com.svg"></a>
+            <a href="#"><img src="../icon/phone-circle-fill-svgrepo-com.svg"></a>
+            </div>
+        </div>
+        <div class="web-links">
+            <a href="../index.html">HOME</a>
+            <a href="../adoption/index.html">ADOPT</a>
+            <a href="../about/about.html">ABOUT</a>
+            <a href="../donors/index.html">DONATE</a>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+

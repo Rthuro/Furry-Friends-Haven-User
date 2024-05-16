@@ -1,0 +1,13 @@
+colors:
+darkish brown 
+#55300d
+rgb(219, 156, 96)
+
+just brown
+#8a5a2c
+
+normal orangey
+#DB9C60
+
+lightish brown
+#f2e4d6

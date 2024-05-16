@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Friends' Haven</title>
+    <link rel="icon" href="../icon/2.png" type="image/icon type">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="nav" id="nav">
+        <a href="../index.html"> <img src="../icon/1.png" class="nav-img" alt=""></a>
+        <!--<div class="nav-links" id="navLinks">
+            <ul>
+                <li> <a href="">HOME</a></li>
+                <li> <a href="#about">ABOUT US</a></li>
+                <li> <a href="#donate">DONATE</a></li>
+                <li> <a href="../adoption/profiles.html">ADOPT</a></li>
+                <li> <a href="">FAQs</a></li>
+            </ul>
+        </div>
+        -->
+    </div>
+    <div class="container1">
+        <div class="desc">
+        <h1>WHAT WE DO</h1>
+        <h>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cupiditate perferendis rem totam praesentium voluptates delectus laboriosam aliquid iure dolor. Quasi maxime odio eveniet consequatur magnam quam earum, mollitia iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid cupiditate, culpa quis atque, eaque tempora vero perferendis facilis quisquam sit corporis pariatur quam esse laboriosam vitae ipsa repudiandae reprehenderit?</h>
+        </div> 
+    <img src="../images/ABOUT/yerlin-matu-GtwiBmtJvaU-unsplash.jpg">
+    </div>
+    <div class="container2">
+        <div class="box">
+            <h>Our Mission</h>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus doloribus neque tempora explicabo. Tenetur porro eius nesciunt optio, accusamus fuga. Debitis commodi quaerat sed reprehenderit temporibus assumenda explicabo libero velit.</p>
+            <a href="#">Donate Now</a>
+        </div>
+        <div class="box2">
+            <h>Our Services</h>
+            <div class="img"> 
+                <img src="../images/ABOUT/services/animal-shelter.png"> 
+                <img src="../images/ABOUT/services/charity.png">
+                <img src="../images/ABOUT/services/kitten.png">
+                <img src="../images/ABOUT/services/volunteering.png">
+            </div>
+        </div>
+        <div class="figure">
+            <h>How It Works</h>
+            <img src="../images/ABOUT/Asset 5@300x.png">
+            <div class="text">
+            <h class="one">Find Your Pet</h>
+            <h class="two">Know Your Pet</h>
+            <h class="three">Bring Your Pet Home</h>
+            </div>
+            <div class="p">
+                <p class="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="two">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="three">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="box3">
+            <h>The Team</h>
+            <div class="group">
+                <div class="person">
+                    <img src="../images/ABOUT/team/adorable-chihuahua-dog-with-female-owner.jpg">
+                    <h>Amelia Rodriguez</h>
+                    <p>Adoption Coordinator</p>
+                </div>
+                <div class="person">
+                    <img src="../images/ABOUT/team/front-view-smiley-woman-holding-goat.jpg">
+                    <h>Kimiko Tanaka</h>
+                    <p>Enrichment Specialist</p>
+                </div>
+                <div class="person">
+                    <img src="../images/ABOUT/team/medium-shot-man-holding-cute-dog.jpg">
+                    <h>Dr. Noah Patel</h>
+                    <p>Veterinarian</p>
+                </div>
+                <div class="person">
+                    <img src="../images/ABOUT/team/woman-carrying-her-pet-subway.jpg">
+                    <h>Omar Durand</h>
+                    <p>Volunteer Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="slider">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quidem doloribus aspernatur, molestiae vitae ea. Ullam aspernatur recusandae voluptate! Quia tempora in libero error dolorum architecto aut nemo repellendus necessitatibus.</p>
+            <img class="slide-image" src="../images/ABOUT/slider/cute-dog-house-waiting-be-adopted-by-someone.jpg" alt="slide 1">
+            <img class="slide-image" src="../images/ABOUT/slider/elderly-people-with-cat-pet.jpg" alt="slide 2">
+            <img class="slide-image" src="../images/ABOUT/slider/woman-playing-with-rescue-dogs-shelter.jpg" alt="slide 3">
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="content">
+      <img src="../icon/1.png">
+          <div class="contact">
+          <a href="#"><img src="../icon/facebookcolored-round-svgrepo-com.svg"></a> 
+          <a href="#"><img src="../icon/instagramcolored-round-svgrepo-com (1).svg"></a>
+          <a href="#"><img src="../icon/phonecolored-circle-fill-svgrepo-com (1).svg"></a>
+          </div>
+      </div>
+      <div class="web-links">
+          <a href="../index.html">HOME</a>
+          <a href="../adoption/index.html">ADOPT</a>
+          <a href="../about/about.html">ABOUT</a>
+          <a href="../donors/index.html">DONATE</a>
+      </div>
+  </div>
+
+    <script>
+        //NAVIGATION
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("nav");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        
+        //SLIDESHOW 
+        const images = document.querySelectorAll('.slide-image');
+        const dots = document.querySelectorAll('.dot');
+
+        let currentImage = 0;
+
+        setInterval(() => {
+          currentImage++;
+          if (currentImage >= images.length) {
+            currentImage = 0;
+          }
+          updateImages();
+          updateDots();
+        }, 4000);
+
+        function updateImages() {
+          images.forEach((image, index) => {
+            if (index === currentImage) {
+          image.style.opacity = 1;
+        } else {
+          image.style.opacity = 0;
+        }
+         });
+        }
+
+        function updateDots() {
+          dots.forEach((dot, index) => {
+            if (index === currentImage) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+    </script>
+</body>
+</html>
