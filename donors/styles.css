@@ -18,8 +18,8 @@ align-items: center;
 justify-content: center;
 }
 .nav-img {
-width: 15vh;
-height: 15vh;
+width: 10vh;
+height: 10vh;
 object-fit: cover;
 }
 
