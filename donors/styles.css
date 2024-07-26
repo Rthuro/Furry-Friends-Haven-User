@@ -10,7 +10,7 @@ box-sizing: border-box;
     }
 .nav{
 /*position: fixed;*/
-height: 15vh;
+height: 20vh;
 width: 100%;
 background-color: #b87a40;
 display: flex;
@@ -18,8 +18,8 @@ align-items: center;
 justify-content: center;
 }
 .nav-img {
-width: 10vh;
-height: 10vh;
+width: 15vh;
+height: 15vh;
 object-fit: cover;
 }
 
