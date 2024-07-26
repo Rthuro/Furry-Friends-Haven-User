@@ -21,12 +21,12 @@
 nav{
     display: flex;
     justify-content: space-between;
+    margin-left: 20vh;
 }
 
 nav img{
     width: 18vh;
     margin-left: 20vh;
-    padding-left: 20vh;
 }
 
 .nav-links{
